@@ -1,19 +1,23 @@
-### Languages: [EN](README.md) - [PT/BR](README.md)
+Languages available: [English](README.md)
 
 # Git Studies
 
 This is a repository created so I can **learn**, **apply** and **share** any studies made regarding git, It's tools and workflows.
 
-# Local Specifications
+# Platform Specifications
 
-For future inconsistencies or divergences, I'll be provinding information about my **hardware** and **software**. Doing so, anyone out there *(including my future self)* can compare any commands or codes to their own configurations.
+For future inconsistencies or divergences, I'll be provinding information about my **hardware** and **software**. Doing so, anyone out there *(including my future self)* will have an easier time regarding platform or OS issues.
 
-**Main Wokstation**
-* Plataform: Laptop
+**Main Wokstation: Laptop**
 * OS: Arch Linux (KDE Plasma)
 * Terminal: Konsole
 
-**Second Workstation**
-* Platform: Desktop
+**Second Workstation: Desktop**
 * OS: Windows 10 Pro
 * Terminal: None (GitHub Desktop)
+
+# Hot Links
+
+> [Git Installation](README.md)
+
+> [Git First Repository and Commands](README.md)
