@@ -18,6 +18,4 @@ For future inconsistencies or divergences, I'll be provinding information about 
 
 # Hot Links
 
-> [Git Installation](README.md)
-
-> [Git First Repository and Commands](README.md)
+> [Git Basics](English/git-basics.md)
