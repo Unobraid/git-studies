@@ -10,7 +10,7 @@ These are the basics of using Git with GitHub.
 
 A working Linux machine (I'm using Arch Linux), internet access and everything up-to-date are required.
 
-1. Open the terminal (Hotkey is CTRL+ALT+T, I'm using **Konsole**).
+1. Open the terminal (I'm using **Konsole**).
 2. Install the core Git package with `pacman -S git`.
    * If you get any errors, run the command as root or use `sudo`.
 
@@ -51,7 +51,7 @@ With all the files and changes added to the list, they need to be commited.
    * To check the status of the files before commiting use `git status`.
    * A log of previous commits can be seen with `git log`.
 
-### Pushing Changes
+### Pushing Commits
 
 After commiting all the local changes, they need to be pushed to the remote repo.
 
