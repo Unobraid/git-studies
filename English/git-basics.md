@@ -1,61 +1,61 @@
 Languages Available: [English](INSTALLATION.md)
 
+### ← [Return](../README.md)
+
 # Git Basics
 
-For this section, I'll cover the process to import, install and setup Git on Linux and Windows according to the [Platform Spectifications](README.md).
-
-# Linux (Arch Distro)
+These are the basics of using Git with GitHub.
 
 ### Installation
 
-For this part, It's assumed that you a have a machine with Linux already running on It, internet acess and everything up-to-date.
+A working Linux machine (I'm using Arch Linux), internet access and everything up-to-date are required.
 
-1. Open the terminal (Usually by the hotkey CTRL+ALT+T, In my case is the **Konsole**).
-2. Type: `pacman -S git` (You'll be intalling the core Git package).
-   1. If you get any errors, try using `sudo` or running the command as root.
-3. That's It, now you have the git library installed.
+1. Open the terminal (Hotkey is CTRL+ALT+T, I'm using **Konsole**).
+2. Install the core Git package with `pacman -S git`.
+   * If you get any errors, run the command as root or use `sudo`.
 
 ### Local Repository
 
-With git intalled, now we can move to create our first repository.
+With git intalled, you can create a local repo.
 
-1. Find or create a folder that you want to use as your repo. (I suggest to make a mother Git folder and other subfolders inside for all the repos that you'll be creating).
-2. Make sure to be on the right folder and type: `git init` (Now you have a local repository).
-3. Finally we need to set your account identify (I suggest to use your GiHub credentials).
-   1. Type: `git config --global user.email "you@example.com"`
-   2. Type: `git config --global user.name "Username"`
-   3. If you want individual credentials for this an other repos omit the `--global` part.
+1. Select a folder that will be used as the repo root.
+2. To initizalize the repo on the folder use `git init`.
+3. An account identify is needed for signing the commits (Use the same credentials for the GitHub account).
+   * Set the email with `git config --global user.email "you@example.com"`
+   * Set the name with `git config --global user.name "Username"`
+   * For and individual identity on the repo, remove `--global` from the command.
 
 ### Remote Repository
 
-If you want to work on your repository from multiple places, or have many people working together, you'll need to sync your local repo with a remote one.
+To export a local repo to other machines over the web, a remote repo is needed.
 
-1. Go to [GitHub](https://github.com), create an account and add a new empty repository like [this](GITHUB-REPO.md).
-2. Open the terminal again and type: `git remote add origin git@github.com:Username/RepoName.git` (Now your local repo now where to push and pull information and files).
-   1. The Username and RepoName are as stated, your GitHub username and the name of the repo you just created.
+1. Go to [GitHub](https://github.com), create an account and add a new empty repository.
+2. On GitHub, copy the repo SSH key, It should look like `git@github.com:Username/RepoName.git`.
+3. In the terminal use `git remote add origin git@github.com:Username/RepoName.git`.
+   * Now the local and remote repos are linked.
 
 ### Adding Files
 
-With the repo ready, we can add our first file. Anything will do, but a readme to be displayed on GitHub would be a nice choice.*
+The repo isready, a first file will be needed to commit the first change.*
 
-1. Create a new markdown file typing: `nano README.md` (Im using nano here, but any text editor will do).
-2. Edit the file with anything that you want, like "Hello World" or what not.
-3. After that type: `git add filename.extension` (This add the individual file to the list of changes to be made, aka: commited).
-   1. You can also type: `git add .` (This way, you add all the files changed whitin the folder).
+1. Create a new markdown file with `nano README.md` (Im using Nano).
+2. Edit the file and type any content like `# Hello World`.
+3. Add the file to the list of changes with `git add filename.extension`.
+   * You can also use `git add .` to add all the files on the repo folder to changes list.
 
 ### Commiting Changes
 
-Now that you changed and added all the files, It's time to apply those changes.
+With all the files and changes added to the list, they need to be commited.
 
-1. To check the stauts of the files to be commited you can type: `git status`
-2. Make sure that you have set your credential or else you be prompted to do so, then type: `git commit -m "Commit Message"`.
-   1. If you want to check the commits history log type: `git log`.
+1. A commit needs a message to be made, so use `git commit -m "Commit Message"`.
+   * To check the status of the files before commiting use `git status`.
+   * A log of previous commits can be seen with `git log`.
 
 ### Pushing Changes
 
-After commiting everything that is needed, now we send those changes to the remote repo.
+After commiting all the local changes, they need to be pushed to the remote repo.
 
-1. Make sure you are using the correct branch, so type: `git branch -M main`.`
-   1. The dafault branch for GitHub is **main**, but you can use whatever you want.
-2. Finally type: `git push -u origin main` (Your commits will be pushed to the remote repo on GitHub).
-   1. After the first push, you´ll only need to use `git push`, as the origin and branch are already set.
+1. To select the repo branch needed use `git branch -M main`.`
+   * The dafault branch for GitHub is main.
+2. To push the commits use `git push -u origin main`.
+   * With the origin and branch set after the first push, a short `git push` can be used as well.
