@@ -2,20 +2,19 @@ Languages available: [English](README.md)
 
 # Git Studies
 
-This is a repository created so I can **learn**, **apply** and **share** any studies made regarding git, It's tools and workflows.
+Hello, this repository was created with the purpose of **learning**, **applying** and **sharing** any of my studies regarding Git.
 
-# Platform Specifications
+# Platform Used
 
-For future inconsistencies or divergences, I'll be provinding information about my **hardware** and **software**. Doing so, anyone out there *(including my future self)* will have an easier time regarding platform or OS issues.
+The platform used and It's details will be listed below for any divergencies analysis.
 
-**Main Wokstation: Laptop**
+* Hardware: Laptop
 * OS: Arch Linux (KDE Plasma)
 * Terminal: Konsole
-
-**Second Workstation: Desktop**
-* OS: Windows 10 Pro
-* Terminal: None (GitHub Desktop)
+* Text Editor: Nano
 
 # Hot Links
 
-> [Git Basics](English/git-basics.md)
+The contents studied will be divided in sections. The repo can be browsed freely, but *hot links* for ease of use will be provided below.
+
+> [Git Basics (Install, SSH, Repo Init, Remote Repo, Adding File, Commits, Push, Clone and Pull)](English/git-basics.md)
