@@ -34,6 +34,18 @@ To export a local repo to other machines over the web, a remote repo is needed.
 3. In the terminal use `git remote add origin git@github.com:Username/RepoName.git`.
    * Now the local and remote repos are linked.
 
+### SSH Authentication
+
+To access and modify remote repos, a form of authentication is needed like a SSH key.
+
+1. To generate a new key use `ssh-keygen -t ed25519 -C "youremail@example.com"`
+   * The key can be saved on the default location.
+   * The passphrase can be null.
+2. Initiate the SSH-agent with `eval "$(ssh-agent -s)"`.
+3. The key need to be added to the SSH-agent with `ssh-add ~/.ssh/id_ed25519`.
+4. Copy the contents of the SSH key file that should be `~/.ssh/id_ed25519.pub`.
+5. Go to [GitHub](https://github.com), settings, SSH & GPG keys and add the SSH key from the previous file.
+
 ### Adding Files
 
 The repo isready, a first file will be needed to commit the first change.*
