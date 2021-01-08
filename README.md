@@ -17,4 +17,4 @@ The platform used and It's details will be listed below for any divergencies ana
 
 The contents studied will be divided in sections. The repo can be browsed freely, but *hot links* for ease of use will be provided below.
 
-> [Git Basics (Install, SSH, Repo Init, Remote Repo, Adding File, Commits, Push, Clone and Pull)](English/git-basics.md)
+> [Git Basics (Install, Repo Init, Remote Repo, SSH Auth, Add File, Commit, Push, Clone and Pull)](English/git-basics.md)
