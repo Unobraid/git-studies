@@ -59,3 +59,5 @@ After commiting all the local changes, they need to be pushed to the remote repo
    * The dafault branch for GitHub is main.
 2. To push the commits use `git push -u origin main`.
    * With the origin and branch set after the first push, a short `git push` can be used as well.
+
+* I changed here.
